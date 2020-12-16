@@ -9,6 +9,6 @@ Dashboard include over 500+ video games from https://www.metacritic.com/, with N
 
 Top 10 games will be returned as result of filters. the result will be filtered based on user score. 
 
-two visualization are included in this dashboard, exhibiting bar plot to show the user score and critic score. the aim of visualizations is trying to help user to identify which video games have highest critic score and user score from the result of 10 games. 
+Two visualization are included in this dashboard, exhibiting bar plot to show the user score and critic score. the aim of visualizations is trying to help user to identify which video games have highest critic score and user score from the result of 10 games. 
 
 Have Fun to enjoy it 
