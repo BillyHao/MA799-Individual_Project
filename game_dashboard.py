@@ -92,24 +92,7 @@ app.layout = html.Div(children=[
             style=dict(textAlign='center', color=colors['text'])),
     html.H2('Produced by Quanlin Hao',
             style=dict(textAlign='center', color=colors['text'])),
-    # html.Div('''Dash: Python网络应用框架'''),
-    # html.H1('你好，Dash'),
-    # html.Label('用户评分user score'),
-    # dcc.Dropdown(
-    #     options=[{'label': 'aa', 'value': 'aa'},
-    #              {'label': 'bb', 'value': 'bb'},
-    #              {'label': 'cc', 'value': 'cc'}],
-    #     # id="user_socre_id",
-    #     value='aa'),
-    # html.Label('(多选）user score / release date'),
-    # dcc.Dropdown(
-    #     options=[{'label': 'user score', 'value': 'user score'},
-    #              {'label': 'relaase date', 'value': 'release date'},
-    #              ],
-    #     value=['user score', 'release date'],
-    #     # id="",
-    #     multi=True),
-    # html.Label('—'*100),
+   
     html.Label('genre'),
     dcc.Dropdown(
         options=[{"label": x, "value": x} for x in genre_list[:25]],
@@ -170,7 +153,7 @@ app.layout = html.Div(children=[
         # muti=True,
         min=meta_score_list[0], max=meta_score_list[-1], value=meta_score_list[-1],
         marks={
-            # i: '标签 {}'.format(i) if i == 1 else str(i) for i in meta_score_list
+            
             meta_score_list[0]: "min:{}".format(meta_score_list[0]),
             meta_score_list[int(len(meta_score_list) / 2)]: "mean:{}".format(
                 meta_score_list[int(len(meta_score_list) / 2)]),
@@ -185,7 +168,7 @@ app.layout = html.Div(children=[
         id="rate_num_id",
         # muti=True,
         min=4, max=17732, value=rate_num_list[-1],
-        # marks={i: '标签 {}'.format(i) if i == 1 else str(i) for i in rate_num_list
+        
         marks={
             rate_num_list[0]: "min:{}".format(rate_num_list[0]),
             8864: "mean:8864",
@@ -196,15 +179,7 @@ app.layout = html.Div(children=[
     ),
 
     html.Div(id="df_div"),
-    # style={'width': '49%', 'display': 'inline-block', 'float': 'right'}),
-    # dcc.Graph(
-    #         id='example-graph',
-    #         figure = dict(
-    #             data = [{'x': [1, 2, 3], 'y': [4, 1, 2], 'type': 'bar', 'name': 'aa'},
-    #                     {'x': [1, 2, 3], 'y': [2, 4, 5], 'type': 'bar', 'name': 'bb'}],
-    #             layout = dict(title = 'Dash数据可视化')
-    #         )
-    #     ),
+
 
 ],
     style={'columnCount': 2}
