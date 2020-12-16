@@ -34,6 +34,7 @@ app = dash.Dash(__name__, external_stylesheets=stylesheet)
 server = app.server
 colors = dict(background='#111111', text='#7FDBFF')
 
+server = app.server
 
 def generate_table(dataframe, ddf, max_rows=10):
     return html.Table([
